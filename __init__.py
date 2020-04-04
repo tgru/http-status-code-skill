@@ -10,7 +10,13 @@ class HttpStatusCodeSkill(MycroftSkill):
 
     @intent_file_handler('code.intent')
     def handle_code_status_http(self, message):
-        self.speak_dialog('not.implemented.yet')
+        code = str(message.data['code'])
+        dialog = code + '.short'
+        if dialog in self.dialog_renderer.templates:
+            self.speak_dialog(dialog)
+        else:
+            data = {'code': code}
+            self.speak_dialog('unknown.code', data)
 
 def create_skill():
     return HttpStatusCodeSkill()
