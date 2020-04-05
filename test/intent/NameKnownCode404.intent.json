@@ -1,0 +1,5 @@
+{
+    "utterance": "code 404",
+    "intent_type": "code.intent",
+    "expected_dialog": "404.short"
+}
