@@ -8,6 +8,11 @@ With this skill Mycroft can name and explain you HTTP status codes which are sta
 * "Explain code 202"
 * "What does error 418 mean?"
 
+## Running Tests
+1. `cd` into the skill directory
+2. Activate the virtual environment: `source /path/to/mycroft_core/venv-activate.sh`
+3. Run the tests: `python -m test.integrationtests.skills.runner`
+
 ## Credits
 @tgru
 
