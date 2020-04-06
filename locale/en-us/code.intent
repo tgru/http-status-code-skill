@@ -1,2 +1,1 @@
-code {code}
-error {code}
+(code|error) (|is) {code}
