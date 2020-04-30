@@ -9,9 +9,9 @@ With this skill Mycroft can name and explain you HTTP status codes which are sta
 * "What does error 418 mean?"
 
 ## Running Tests
-1. `cd` into the skill directory
-2. Activate the virtual environment: `source /path/to/mycroft_core/venv-activate.sh`
-3. Run the tests: `python -m test.integrationtests.skills.runner`
+1. `cd` into this skills directory
+2. Set the `MYCROFT_CORE` variable in the `run_tests.sh` script to point to your Mycroft installation
+3. Run the `run_tests.sh` script
 
 ## Credits
 @tgru
